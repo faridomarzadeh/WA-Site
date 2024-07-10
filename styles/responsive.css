@@ -1,0 +1,27 @@
+@media screen  and (max-width:1200px){
+    
+}
+
+@media screen  and (max-width:992px){
+    .nav__logo{
+        font-size: 5rem;
+    }
+    .menu__item{
+        margin-right: 3rem;
+    }
+}
+
+@media screen  and (max-width:768px){
+    .menu {
+        display: none;
+    }
+    .nav__toggle-icon{
+        display: flex;
+        align-items: center;
+        align-items: center;
+    }
+}
+
+@media screen  and (max-width:576px){
+    
+}
