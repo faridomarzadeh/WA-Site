@@ -1,5 +1,20 @@
+@media screen and (max-width:1400px) {
+    .home{
+        height: 75rem;
+    }
+    .home__title{
+        font-size: 4rem;
+    }
+}
+
 @media screen  and (max-width:1200px){
-    
+    .home{
+        height: 70rem;
+    }
+    .home__photo{
+        width: 45rem;
+        height: 45rem;
+    }
 }
 
 @media screen  and (max-width:992px){
@@ -8,6 +23,31 @@
     }
     .menu__item{
         margin-right: 3rem;
+    }
+    .home .row{
+        flex-direction: column-reverse;
+    }
+
+    .flex-md-dir-column{
+        flex-direction: column;
+    }
+
+    .home__content{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .home{
+        margin-top: 4rem;
+        background-image: none;
+    }
+    .home__photo{
+        margin: 0 auto;
+    }
+    .home__caption{
+        text-align: center;
     }
 }
 
@@ -60,8 +100,55 @@
         z-index: 90;
         opacity: 1;
     }
+    .home__photo{
+        width: 45rem;
+        height: 45rem;
+        background-position-x: calc(50%);
+        background-position-y: calc(10%);
+    }
 }
 
 @media screen  and (max-width:576px){
-    
+    .home__photo{
+        width: 40rem;
+        height: 40rem;
+        background-position-x: calc(50%);
+        background-position-y: calc(10%);
+    }
+}
+
+@media screen and (max-width:420px) {
+    .home__photo{
+        width: 33rem;
+        height: 33rem;
+        background-position-x: calc(50%);
+        background-position-y: calc(10%);
+        border-width: 1.5rem;
+    }
+    .home__links{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .home__link{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .home__title{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__photo{
+        width: 100%;
+    }
+    .home__title{
+        font-size: 2.5rem;
+    }
+    .home__user{
+        font-size: 1.5rem;
+    }
 }
