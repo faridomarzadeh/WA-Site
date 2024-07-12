@@ -12,6 +12,7 @@
     --section-bg-color: #fff;
     --primary-color: #09BEAD;
     --secondary-color: #F57F17;
+    --home-shape-color :#09BEAD;
 }
 
 
@@ -24,6 +25,8 @@ body {
     font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--app-bg-color);
 }
 
 
@@ -40,6 +43,40 @@ ul{
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+}
+
+/* 
+============================================
+    Components
+============================================
+*/
+.app-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 5rem;
+    border-radius: 4rem;
+    color: #fff;
+    font-family: 'Poppins SemiBold';
+
+}
+.app-btn--orange{
+    background-color: var(--secondary-color);
+    box-shadow: 1rem 2rem 3rem -1rem rgba(245, 127, 23, 0.24);
+}
+.app-btn--teal {
+    background-color: var(--primary-color);
+    box-shadow: 1rem 2rem 3rem -1rem rgba(11,190,173,0.4);
+}
+
+/* 
+============================================
+    Helper Classes
+============================================
+*/
+.align-items-center{
+    align-items: center;
 }
 /* 
 ============================================
@@ -133,74 +170,76 @@ ul{
     background-color: transparent;
 }
 
+/* 
+============================================
+    Main
+============================================
+*/
 
 .main{
     overflow: hidden;
-    padding-top: 11rem;
+    padding-top: 12rem;
 }
+
+
+/* 
+============================================
+    Home Section
+============================================
+*/
 .home{
-    padding-top: 10rem;
+    margin-top: 10rem;
 }
 .home__content{
-    min-width: 40rem;
-    margin: 10rem auto 0 auto;
-
 }
 .home__user{
+    font-family: 'Poppins SemiBold';
     color: var(--primary-color);
-    font-family: 'Poppins-SemiBold';
-    font-size: 2.8rem;
-    margin-bottom: 0;
+    font-size: 2.2rem;
+    margin: 0;
 }
 .home__user--name{
     color: var(--secondary-color);
 }
 .home__title{
+    font-family: 'Poppins Bold';
     color: var(--primary-color);
-    font-family: 'Poppins-Bold';
-    font-size: 5rem;
-    margin: 1rem 0;
+    font-size: 4rem;
+    margin: 0;
 }
 .home__caption{
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins Regular';
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 .home__links{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
 }
-.home__link-btn{
-    font-family: 'Poppins-SemiBold';
-    color: #fff;
-    display: block;
-    width: 20rem;
-    height: 5rem;
-    text-align: center;
-    align-content: center;
-    border-radius: 2rem;
-    margin-right: 2rem;
+.home__link{
+    margin-right: 3rem;
+}
+.home__link:last-child{
+    margin-right: 0;
 }
 .home__link-btn--primary{
-    background-color: var(--primary-color);
-    box-shadow: 1rem 1rem 3rem -1rem var(--primary-color);
+
 }
 .home__link-btn--secondary{
-    background-color: var(--secondary-color);
-    box-shadow: 1rem 1rem 3rem -1rem var(--secondary-color);
+
 }
 .home__photo{
-    border: 2rem solid var(--app-bg-color);
-    box-shadow: 0px .5rem 4rem rgba(4, 195, 255, 0.16);
-    text-align: center;
-    width: 55rem;
-    height: 55rem;
-    border-radius: 50%;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 100%;
     background-image: url('../images/header-avatar.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position-x: calc(65%);
-    background-position-y: calc(100%);
+    background-position-y: calc(30%);
+    border: 2rem solid var(--section-bg-color);
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
 }
 .home__shape{
-    transform: scaleX(1.2);
+
 }
