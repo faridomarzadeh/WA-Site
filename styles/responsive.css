@@ -15,6 +15,10 @@
         width: 45rem;
         height: 45rem;
     }
+    .service{
+        width: 31rem;
+        height: 31rem;
+    }
 }
 
 @media screen  and (max-width:992px){
@@ -179,5 +183,8 @@
     }
     .about__title{
         font-size: 2.2rem;
+    }
+    .service{
+        width: 100%;
     }
 }
