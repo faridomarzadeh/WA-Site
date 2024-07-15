@@ -277,15 +277,10 @@ ul{
 .home__link:last-child{
     margin-right: 0;
 }
-.home__link-btn--primary{
 
-}
-.home__link-btn--secondary{
-
-}
 .home__photo{
-    width: 52rem;
-    height: 52rem;
+    width: 50rem;
+    height: 50rem;
     border-radius: 100%;
     background-image: url('../images/header-avatar.jpg');
     background-repeat: no-repeat;
@@ -395,70 +390,96 @@ ul{
     margin-top: 6rem;
 }
 .service{
-    width: 37rem;
-    height: 37rem;
-    margin: auto;
-    position: relative;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     overflow: hidden;
+    padding: 8rem 3rem;
+    position: relative;
+    z-index: 5;
+    height: 100%;
 }
 
 .service__icon{
+
+}
+
+.service__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
 .service__title{
     font-family: "Poppins Bold";
     font-size: 2.4rem;
-    margin: 1.5rem 0;
+    margin-bottom:0;
+    margin-top:1.6rem;
 
 }
 .service__description{
-    max-width: 30rem;
-    margin: 0;
+    margin-bottom: 0;
 }
+
+
 .service--purple{
     background-color: #8540FF;
-    background-image: url('../images/shapes/service-shape--purple.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
+.service--purple .service__wave{
+    fill: #803AFB;
+}
+
+
 .service--yellow{
     background-color: #FFC50C;
-    background-image: url('../images/shapes/service-shape--yellow.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
+
 }
+.service--yellow .service__wave{
+    fill: #FFBB01;
+}
+
+
 .service--red{
     background-color: #EC407A;
-    background-image: url('../images/shapes/service-shape--red.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
+
 }
+.service--red .service__wave{
+    fill: #F5276C;
+}
+
+
 .service--orange{
     background-color: #FF6331;
-    background-image: url('../images//shapes/service-shape--orange.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
+
 }
+.service--orange .service__wave{
+    fill:#FF5823
+}
+
+
 .service--blue{
     background-color: #13B6FF;
-    background-image: url('../images/shapes/service-shape--blue.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
+
 }
+.service--blue .service__wave{
+    fill: #03ACF8;
+}
+
+
 .service--green{
     background-color: #49AF46;
-    background-image: url('../images/shapes/service-shape--green.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
 
+.service--green .service__wave{
+    fill: #49B846;
+}
 
-
+/* 
+============================================
+    Resueme
+============================================
+*/
 
 
 .resume{

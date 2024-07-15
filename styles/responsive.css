@@ -1,3 +1,16 @@
+
+
+
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+
+
+
 @media screen and (max-width:1400px) {
     .home{
         height: 75rem;
@@ -16,8 +29,7 @@
         height: 45rem;
     }
     .service{
-        width: 31rem;
-        height: 31rem;
+        padding: 8rem 2rem;
     }
 }
 
@@ -120,6 +132,10 @@
     }
     .about__content{
         padding: 2rem 4rem;
+    }
+
+    .service{
+        padding: 4rem 1rem;
     }
 }
 
