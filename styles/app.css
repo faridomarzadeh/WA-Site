@@ -484,4 +484,5 @@ ul{
 
 .resume{
     margin-top: 6rem;
+    background-color: var(--section-bg-color);
 }
