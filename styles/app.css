@@ -541,6 +541,7 @@ ul{
     border-radius: 3rem;
     z-index: -1;
     transition: all 0.2s ease-in;
+    max-width: 26rem;
 }
 
 .resume-list__item--active{
@@ -548,7 +549,6 @@ ul{
 }
 
 .resume-list__item--active::before{
-    max-width: 26rem;
     width: 100%;
 }
 
