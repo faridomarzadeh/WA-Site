@@ -10,7 +10,13 @@ navToggleIcon.addEventListener('click', () =>{
 
 resumeListItems.forEach(resumeListItem =>{
     resumeListItem.addEventListener('click', function(){
-        document.querySelector('.resume-list__item--active').classList.remove('resume-list__item--active');
+
+        let active = document.querySelector('.resume-list__item--active');
+        active.classList.remove('resume-list__item--active');
+        let contentId = active.getAttribute('data-content-id').substring(1);
+        document.getElementById(contentId).classList.remove('resume-content--show');
+
         this.classList.add('resume-list__item--active');
+        document.getElementById(this.getAttribute('data-content-id').substring(1)).classList.add('resume-content--show');
     })
 })

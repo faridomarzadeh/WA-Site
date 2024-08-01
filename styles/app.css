@@ -490,7 +490,7 @@ ul{
 
 
 .resume{
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 10rem 0;
     box-shadow: 0 0 6rem rgba(19,182,255,0.24);
     margin-bottom: 10rem;
@@ -506,6 +506,8 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 2rem;
+    padding: 7rem 0;
 }
 
 .resume-list::before{
@@ -536,12 +538,12 @@ ul{
     left: 0;
     top:0;
     bottom: 0;
-    background-color: var(--primary-color);
     width: 5.2rem;
     border-radius: 3rem;
     z-index: -1;
     transition: all 0.2s ease-in;
-    max-width: 26rem;
+    max-width: 28rem;
+    background-color: var(--primary-color);
 }
 
 .resume-list__item--active{
@@ -562,39 +564,72 @@ ul{
     font-family: "Poppins SemiBold";
     font-size: 2rem;
     margin-left: 2.1rem;
-    transition: all 0.2s ease-in;
+    /* transition: all 0.2s ease-in; */
 }
 
 .resume-content {
-
+    padding-left: 3rem;
+    border-left: .2rem solid var(--primary-color);
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in;
 }
 
-.dresume-content--show{
+.resume-content--show{
+    padding-top: 1rem;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
 }
 
 .resume-content__item{
+    margin-bottom: 2rem;
+    transition: all 200ms ease-out;
 }
-
+.resume-content__item:last-child{
+    margin-bottom: 0;
+}
 .resume-content__head{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .resume-content__title{
-
+    font-family: 'Poppins SemiBold';
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin: 0;
+    position: relative;
 }
 
 .resume-content__title::before{
-
+    position: absolute;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    left: -4.1rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius: 100%;
+    background-color: var(--primary-color);
 }
 
 .resume-content__title-info{
-
+    background-color: var(--secondary-color);
+    padding: 0.3rem 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
 }
 
 .resume-content__subtitle{
-
+    font-family: 'Poppins SemiBold';
+    font-size: 1.6rem;
+    margin: 1rem 0;
 }
 
 .resume-content__description{
-
+    margin: 0;
 }
