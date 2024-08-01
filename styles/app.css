@@ -633,3 +633,28 @@ ul{
 .resume-content__description{
     margin: 0;
 }
+
+/* 
+============================================
+    Portfolio
+============================================
+*/
+.portfolio{
+    margin-top: 12rem;
+}
+
+.portfolio-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.portfolio-menu__item{
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+}
+.portfolio-menu__item--active{
+    background-color: var(--primary-color);
+    columns: #fff;
+}
