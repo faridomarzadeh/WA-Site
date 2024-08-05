@@ -490,10 +490,9 @@ ul{
 
 
 .resume{
-    margin-top: 8rem;
+    margin-top: 20rem;
     padding: 10rem 0;
     box-shadow: 0 0 6rem rgba(19,182,255,0.24);
-    margin-bottom: 10rem;
     transform: skewY(-6deg);
     background-color: var(--section-bg-color);
 }
@@ -640,7 +639,8 @@ ul{
 ============================================
 */
 .portfolio{
-    margin-top: 12rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
 }
 
 .portfolio-menu{
@@ -649,12 +649,53 @@ ul{
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-content{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.portfolio-content--active{
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+
 }
 .portfolio-menu__item{
-    padding: 1rem 2rem;
-    border-radius: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 2.2rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
 }
 .portfolio-menu__item--active{
     background-color: var(--primary-color);
-    columns: #fff;
+    color: #fff;
+
+}
+
+.portfolio-content__img{
+    width: 100%;
+
+}
+.swiper-pagination-bullet{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 0.5rem solid #BFBEBE;
+    margin-top: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+
+    border: 0.5rem solid var(--primary-color);
+}
+
+.swiper-pagination{
+    position: static;
+    margin-top: 1rem;
 }
