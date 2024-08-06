@@ -129,6 +129,9 @@ ul{
 .h-full{
     height: 100%;
 }
+.justify-content-center{
+    justify-content: center;
+}
 /* 
 ============================================
     Header
@@ -682,20 +685,103 @@ ul{
 
 }
 .swiper-pagination-bullet{
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border-radius: 100%;
     background-color: #fff;
-    border: 0.5rem solid #BFBEBE;
+    border: 0.3rem solid #BFBEBE;
     margin-top: 2rem;
 }
 
 .swiper-pagination-bullet-active {
 
-    border: 0.5rem solid var(--primary-color);
+    border: 0.3rem solid var(--primary-color);
 }
 
 .swiper-pagination{
     position: static;
     margin-top: 1rem;
+}
+
+
+
+
+
+
+
+.pricing{
+    margin-top: 20rem;
+    background-color: var(--section-bg-color);
+    transform: skewY(-6deg);
+    box-shadow: 0 0 4rem rgba(19,182,255,0.24);
+    padding: 10rem 0;
+}
+
+.price{
+    box-shadow: 0 0 4rem rgba(19,182,255,0.24);
+    background-color: var(--app-bg-color);
+    text-align: center;
+    max-width: 37rem;
+}
+.price-head{
+    padding: 1.5rem 0;
+    color: #fff;
+}
+.price-head--orange{
+    background-color: #FF6331;
+}
+.price-head--purple{
+background-color: #803AFB;
+}
+.price-head--pink{
+    background-color: #F5276C;
+}
+.price__title{
+    margin: 0;
+    font-size: 3rem;
+    font-family: "Poppins SemiBold";
+}
+.price__price{
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: "Poppins SemiBold";
+}
+.price__caption{
+
+}
+.price-body{
+    padding: 2rem 0;
+}
+.price-list{
+
+}
+.price-list__item{
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 18rem;
+    margin-bottom: 1.5rem;
+}
+.price-list__item::before{
+    content: "\2713";
+    margin-right: 2rem;
+}
+.price-list__item-mark{
+    display: inline-block;
+}
+.price-list__item-content{
+    display: inline-block;
+}
+.btn--yellow{
+    margin: 2rem auto 0 auto;
+    background-color: #F57F17;
+}
+.btn--purple{
+    margin: 2rem auto 0 auto;
+    background-color: #803AFB;
+}
+.btn--pink{
+    margin: 2rem auto 0 auto;
+    background-color: #F5276C;
 }
