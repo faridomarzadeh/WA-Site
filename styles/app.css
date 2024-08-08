@@ -873,3 +873,50 @@ background-color: #803AFB;
     border-radius: 5rem;
     cursor: pointer;
 }
+
+
+
+/* 
+============================================
+    Footer
+============================================
+*/
+
+
+.footer{
+    padding: 2rem 0;
+    background-color: var(--app-bg-color);
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__copy-right{
+    font-size: 1.8rem;
+    font-family: 'Poppins SemiBold';
+    letter-spacing: .25rem;
+}
+.footer__socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer__social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.footer__social:hover{
+    background-color: var(--primary-color);
+}
+.footer__social svg{
+    width: 90%;
+    fill: var(--app-bg-color);
+}
